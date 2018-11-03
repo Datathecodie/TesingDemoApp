@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phonegap.helloworld" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Data the Codie: The Website</name>
+    <description>The Demo app Showing how easily we can have Webpages to apps.</description>
+    <author email="ekavade@gmail.com" href="http://datathecodie.github.io">Dattaprasad Ekavade</author>
+    <content src="index.html" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <gap:plugin name="com.google.cordova.admob" source="plugins.cordova.io" />
+    <access origin="*" />
+    <allow-navigation href="http://*/*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon src="www/img/logo0.png" />
+    <update src="res/screen/android/splash-hdpi.9.png" target="www/splash.png" />
+    <update src="res/screen/android/splash-ldpi.9.png" target="www/splash.png" />
+    <update src="res/screen/android/splash-mdpi.9.png" target="www/splash.png" />
+    <update src="res/screen/android/splash-xhdpi.9.png" target="www/splash.png" />
+    <update src="res/screen/android/splash-xxhdpi.9.png" target="www/splash.png" />
+    <splash src="www\splash.png" />
+    <allow-intent href="market:*" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="SplashScreenDelay" value="2000" />
+    <preference name="SplashScreen" value="screen" />
+</widget>
