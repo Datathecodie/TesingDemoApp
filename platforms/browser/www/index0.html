@@ -61,27 +61,15 @@
                 });
             });
         </script>
-        <script>
-            var admobid = {};
-                admobid = {
-                banner: 'ca-app-pub-2679539736200885/7196708483', // or DFP format "/6253334/dfp_example_ad"
-                };
-               
-             function createSelectedBanner()
-                {
-                    AdMob.createBanner( { adId:admobid.banner,
-                        bgColor: '#aabbcc', overlap:false,
-                        adSize: 'SMART_BANNER',// Available sizes are SMART_BANNER, BANNER,MEDIUM_RECTANGLE,FULL_BANNER,LEADERBOARD and SKYSCRAPER
-                        position:8 //1 => Top Left, 2 => Top Center, 3 => Top Right, 4 => Left, 5 => Center, 6 => Right, 7 => Bottom Left, 8 => Bottom Center, 9 => Bottom Right
-                        } );
-                }
-        </script>
+   
     	<center> <iframe src="http://ranoutofmoney.myartsonline.com"  class="iframe" frameborder="0" ></iframe> </center>
-        <div onload="createSelectedBanner()"><a href="index.html"> </a> </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
+        
+        
+         window.admob.showBannerAd(true,,);
     </script>
 </body>
 

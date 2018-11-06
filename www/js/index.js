@@ -41,8 +41,7 @@ var app = {
         if (window.admob) {
             admob.setOptions({
                 publisherId: admobid.banner,
-                interstitialAdId: admobid.interstitial,
-                bannerAtTop: true, // set to true, to put banner at top
+                bannerAtTop: false, // set to true, to put banner at top
                 overlap: false, // set to true, to allow banner overlap webview
                 offsetStatusBar: true, // set to true to avoid ios7 status bar overlap
                 isTesting: true, // receiving test ads (do not test with real ads as your account will be banned)
@@ -54,6 +53,7 @@ var app = {
         }
     },
     
+     admob.createBannerView();
     
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);

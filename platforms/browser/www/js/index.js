@@ -25,6 +25,36 @@ var app = {
     //
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
+    
+      initAds: function () {
+        var isAndroid = (/(android)/i.test(navigator.userAgent));
+        var adPublisherIds = {
+           
+            android: {
+                banner: 'ca-app-pub-2679539736200885/7196708483'//change ca-app-pub-2679539736200885/7196708483
+               
+            }
+        };
+        var admobid;
+           admobid = adPublisherIds.android;
+          
+        if (window.admob) {
+            admob.setOptions({
+                publisherId: admobid.banner,
+                bannerAtTop: false, // set to true, to put banner at top
+                overlap: false, // set to true, to allow banner overlap webview
+                offsetStatusBar: true, // set to true to avoid ios7 status bar overlap
+                isTesting: true, // receiving test ads (do not test with real ads as your account will be banned)
+                autoShowBanner: true, // auto show banners ad when loaded
+                autoShowInterstitial: false // auto show interstitials ad when loaded
+            });
+        } else {
+            alert('cordova-admob plugin not ready.\nAre you in a desktop browser? It won\'t work...');
+        }
+    },
+    
+     admob.createBannerView();
+    
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },

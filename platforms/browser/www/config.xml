@@ -8,7 +8,7 @@
     <author email="ekavade@gmail.com" href="http://datathecodie.github.io">Dattaprasad Ekavade</author>
     <content src="index.html" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
-    <gap:plugin name="com.google.cordova.admob" source="plugins.cordova.io" />
+    <gap:plugin name="phonegap-admob" source="npm" />
     <access origin="*" />
     <allow-navigation href="http://*/*" />
     <allow-intent href="http://*/*" />
